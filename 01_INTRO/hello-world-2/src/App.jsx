@@ -19,11 +19,12 @@ function App() {
 
   return (
     <div>
-      <h1>Hello World 2</h1>
+      <h1>DevCard</h1>
       <div className='card'>
         <img src="../src/assets/images/rubemvn.jpg" alt="Perfil de Rúbem Vieira" />
         <h2>User: {rub.user}</h2>
         <h2>Name: {rub.name}</h2>
+        <h2></h2>
         <p>{rub.about}</p>
       </div>
     </div>
@@ -31,3 +32,6 @@ function App() {
 }
 
 export default App
+
+
+a
