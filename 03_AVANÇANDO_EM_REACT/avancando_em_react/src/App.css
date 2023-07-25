@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -41,8 +44,49 @@
   color: #888;
 }
 
-.challenge{
-  background-color: rgb(56, 165, 255);
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+  background-color: #303030;
+  -webkit-box-shadow: 3px 3px 37px 0px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 3px 3px 37px 0px rgba(0, 0, 0, 0.33);
+  box-shadow: 3px 3px 37px 0px rgba(0, 0, 0, 0.33);
+}
+
+.challenge {
+  background-color: #38a5ff;
   padding: 20px;
   border-radius: 5px;
+  width: 200px;
+  height: min-content;
+  -webkit-box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contentCard {
+  display: grid;
+  gap: 20px;
+  grid-template: auto auto/auto auto;
+  background-color: #444444;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cardInfo {
+  text-align: start;
+  line-height: 1;
+  background-color: #9e4e8d;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 11px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 3px 11px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 11px 0px rgba(0, 0, 0, 0.2);
 }
