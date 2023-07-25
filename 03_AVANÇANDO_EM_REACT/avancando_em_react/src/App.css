@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.challenge{
+  background-color: rgb(56, 165, 255);
+  padding: 20px;
+  border-radius: 5px;
+}

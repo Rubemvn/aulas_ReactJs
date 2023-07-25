@@ -1,14 +1,13 @@
 import './App.css'
-import Teste from './components/Teste'
+import NightCity from './assets/image2.jpg'
+import ManageData from './components/ManageData'
 
 function App() {
 
   return (
-    <>
-      <div>
-        <Teste/>
-      </div>
-    </>
+    <div>
+      <ManageData/>
+    </div>
   )
 }
 
