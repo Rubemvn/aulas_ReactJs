@@ -45,8 +45,8 @@
 }
 
 .content {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template: auto auto auto/auto auto auto;
   align-items: flex-start;
   padding: 20px;
   border-radius: 10px;
@@ -58,6 +58,7 @@
 }
 
 .challenge {
+  box-sizing: border-box;
   background-color: #38a5ff;
   padding: 20px;
   border-radius: 5px;
@@ -78,6 +79,9 @@
   -webkit-box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.2);
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
 }
 
 .cardInfo {
@@ -89,4 +93,55 @@
   -webkit-box-shadow: 3px 3px 11px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 3px 3px 11px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 3px 3px 11px 0px rgba(0, 0, 0, 0.2);
+}
+
+.conditionalCard {
+  padding: 20px;
+  background-color: #38a5ff;
+  width: 260px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 11px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 3px 11px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 11px 0px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+  background-color: #8a0000;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.conditionalCard button {
+  margin: 10px;
+}
+
+.ballBar {
+  display: flex;
+  align-items: center;
+  background-color: #adff2f;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.sideBall{
+  background-color: #022002;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.center {
+  justify-content: center;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
 }
