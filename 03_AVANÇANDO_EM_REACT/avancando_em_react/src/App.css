@@ -145,3 +145,11 @@
 .right {
   justify-content: flex-end;
 }
+
+.ComponentChallenge {
+  width: 303px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+}
