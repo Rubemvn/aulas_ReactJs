@@ -1,0 +1,13 @@
+.contentCard {
+  text-align: start;
+  width: 200px;
+  background-color: #009669;
+  padding: 10px 20px 20px 20px;
+  border-radius: 7px;
+}
+.contentCard h2{
+  text-align: center;
+  background-color: #006849;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}

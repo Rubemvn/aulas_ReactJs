@@ -1,4 +1,15 @@
 .content {
   background-color: #161616;
   padding: 20px;
+  width: fit-content;
+  text-align: center;
+  display: grid;
+  grid-template: auto auto auto / auto auto auto;
+  gap: 15px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 45px;
 }
