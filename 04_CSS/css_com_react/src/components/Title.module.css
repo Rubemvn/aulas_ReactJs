@@ -1,0 +1,9 @@
+.my_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #c45f00;
+  color: aliceblue;
+}
