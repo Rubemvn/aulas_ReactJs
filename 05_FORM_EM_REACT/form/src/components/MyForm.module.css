@@ -1,0 +1,19 @@
+.form_container {
+  box-sizing: border-box;
+  background-color: #181818;
+  padding: 20px;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+input, 
+select, 
+textarea {
+  display: block;
+  margin-top: 10px;
+}
+
