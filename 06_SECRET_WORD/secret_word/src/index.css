@@ -4,14 +4,51 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: 62.5%;
+}
+
 html,
 body {
   height: 100%;
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   background: #833ab4;
   background: linear-gradient(45deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
   color: #ffffff;
+}
+
+button {
+  padding: 15px 50px;
+  border-radius: 5px;
+  border: none;
+  background: #f0f0f0;
+  cursor: pointer;
+  transition: all .1s linear;
+}
+
+button p {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  
+  background: linear-gradient(to right, #833ab4 0%, #FD1D1D 50%, #FCB045 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: bold;
 }
