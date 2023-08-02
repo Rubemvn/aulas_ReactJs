@@ -48,7 +48,24 @@ h1 {
   font-size: 4.5rem;
 }
 
-p {
+p,
+span {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FD1D1D;
+  flex-direction: column;
+  row-gap: 30px;
+
+  -webkit-box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.2);
 }
