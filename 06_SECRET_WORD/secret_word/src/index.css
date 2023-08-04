@@ -1,3 +1,12 @@
+:root{
+  --richBlack: #040F0F;
+  --forestGreen: #248232;
+  --pigmentGreen: #2BA84A;
+  --gunmetal: #2D3A3A;
+  --babyPowder: #FCFFFC;
+  --honoluluBlue: #0E79B2;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,34 +23,34 @@ body {
 }
 
 body {
-  font-family: 'Montserrat Alternates', sans-serif;
-  background: #833ab4;
-  background: linear-gradient(45deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
-  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--richBlack);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 button {
   padding: 15px 50px;
   border-radius: 5px;
   border: none;
-  background: #f0f0f0;
+  background: var(--pigmentGreen);
   cursor: pointer;
   transition: all .1s linear;
 }
 
 button p {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 2rem;
-  
-  background: linear-gradient(to right, #833ab4 0%, #FD1D1D 50%, #FCB045 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--babyPowder);
 
 }
 
 button:hover {
   scale: 1.1;
+  background-color: var(--forestGreen);
 }
 
 h1 {
@@ -61,9 +70,9 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FD1D1D;
+  color: var(--gunmetal);
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 10px;
 
   -webkit-box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.2);

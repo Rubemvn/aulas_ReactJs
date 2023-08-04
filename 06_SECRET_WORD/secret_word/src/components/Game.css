@@ -1,9 +1,7 @@
-.game h1 {
-  font-size: 3rem;
-}
-
-.ponts span {
+.points span{
   font-weight: bold;
+  color: var(--pigmentGreen);
+  font-size: 2.2rem;
 }
 
 .tip,
@@ -12,12 +10,50 @@
 }
 
 .tip span {
-  color: rgb(255, 217, 0);
+  color:var(--honoluluBlue);
 }
 
 .wordContainer {
   margin: 1.5rem;
   padding: 1.5rem;
-  border: 2rem solid #72158a;
+  border: 2rem solid var(--honoluluBlue);
   display: flex;
 }
+
+.letter,
+.blankSquare {
+  font-size: 70px;
+  line-height: 1.5;
+  border: 3px solid var(--richBlack);
+  height: 100px;
+  width: 100px;
+  text-transform: uppercase;
+  background-color: var(--babyPowder);
+  color: var(--gunmetal);
+  font-weight: 700;
+}
+
+.guidanceText {
+  margin-bottom: 1.2rem;
+}
+
+.letterContainer form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letterContainer input {
+  height: 54px;
+  width: 54px;
+  font-size: 2em;
+  text-align: center;
+  margin-right: 1em;
+}
+
+.backButtons {
+  scale: .75;
+  display: flex;
+  gap: 20px;
+}
+
