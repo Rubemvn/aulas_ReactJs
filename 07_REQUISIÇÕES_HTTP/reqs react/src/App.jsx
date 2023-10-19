@@ -1,31 +1,39 @@
 import { useEffect, useState } from 'react'
+
+// 4 - import custom hook
+import { useFetch } from './hooks/useFetch'
+
 import './App.css'
 
 function App() {
   const [products, setProducts] = useState([])
 
+  const url = "http://localhost:3000/products"
+  // 4 - custom hook
+  const { data: items } = useFetch(url)
+
   const [name, setName] = useState("")
-  const [price, setPrice] = useState("")
+  const [price, setPrice] = useState(0)
 
-  const url = "http://localhost:3000/products/"
 
+  // console.log(data)
 
   // 1 - resgatando dados do backend
-  useEffect(() => {
+  // useEffect(() => {
 
-    async function fetchData() {
+  //   async function fetchData() {
 
-      const res = await fetch(url);
-      const data = await res.json();
+  //     const res = await fetch(url);
+  //     const data = await res.json();
 
-      setProducts(data);
-    }
+  //     setProducts(data);
+  //   }
 
-    fetchData();
-  }, [])
+  //   fetchData();
+  // }, [])
 
   // 2 - adicionando produtos
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const product = {
@@ -42,15 +50,23 @@ function App() {
       },
       body: JSON.stringify(product)
     })
+    // 3 - carregamento dinamico
+    const addedProduct = await res.json()
+
+    setProducts((prevProducts) => [...prevProducts, addedProduct]);
+
+    setName("")
+    setPrice("")
   }
+
 
   return (
     <>
       <div className='App'>
         <h1>Lista de Produtos</h1>
         <ul>
-          {
-            products.map((product) => (
+          {items &&
+            items.map((product) => (
               <li key={product.id}>
                 {product.name} - R$ {product.price}
               </li>
@@ -61,17 +77,16 @@ function App() {
           <form onSubmit={handleSubmit}>
             <label>
               Name:
-              <input
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)} />
+              <input type="text" value={name} onChange={(e) => setName(e.target.value)}
+              />
             </label>
             <label>
               Price:
               <input
                 type="number"
                 value={price}
-                onChange={(e) => setPrice(e.target.value)} />
+                onChange={(e) => setPrice(e.target.value)}
+              />
             </label>
             <input type="submit" value="Criar" />
           </form>

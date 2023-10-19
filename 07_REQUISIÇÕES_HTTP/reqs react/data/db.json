@@ -19,6 +19,41 @@
       "id": 4,
       "name": "Tênis Adidas",
       "price": 359.9
+    },
+    {
+      "name": "meia",
+      "price": 45.5,
+      "id": 5
+    },
+    {
+      "name": "rubem ",
+      "price": "56",
+      "id": 6
+    },
+    {
+      "name": "capa de chuva",
+      "price": "34",
+      "id": 7
+    },
+    {
+      "name": "case",
+      "price": "20",
+      "id": 8
+    },
+    {
+      "name": "mouse",
+      "price": "200.75",
+      "id": 9
+    },
+    {
+      "name": "radar velsis",
+      "price": "400",
+      "id": 10
+    },
+    {
+      "name": "carroça",
+      "price": "789.89",
+      "id": 11
     }
   ]
 }
