@@ -54,6 +54,16 @@
       "name": "carroça",
       "price": "789.89",
       "id": 11
+    },
+    {
+      "name": "fone de ouvido",
+      "price": "95.5",
+      "id": 12
+    },
+    {
+      "name": "fone de ouvido",
+      "price": "95.5",
+      "id": 13
     }
   ]
 }
