@@ -10,7 +10,7 @@ function App() {
 
   const url = "http://localhost:3000/products"
   // 4 - custom hook
-  const { data: items, httpConfig, loading} = useFetch(url)
+  const { data: items, httpConfig, loading, error} = useFetch(url)
 
   const [name, setName] = useState("")
   const [price, setPrice] = useState(0)
@@ -62,6 +62,11 @@ function App() {
     setPrice("")
   }
 
+  const deleteProduct = (id) => {
+    console.log(id)
+    httpConfig(id, 'DELETE')
+  }
+
 
   return (
     <>
@@ -69,11 +74,13 @@ function App() {
         <h1>Lista de Produtos</h1>
         {/* 6 - loading */}
         {loading && <p>Carregando dados...</p>}
-        {!loading && (
+        {error && <p>{error}</p>}
+        {!error && (
           <ul> {items &&
             items.map((product) => (
               <li key={product.id}>
                 {product.name} - R$ {product.price}
+                <button onClick={() => deleteProduct(product.id)}>Deletar Produto</button>
               </li>
             ))
           } </ul>
@@ -93,7 +100,9 @@ function App() {
                 onChange={(e) => setPrice(e.target.value)}
               />
             </label>
-            <input type="submit" value="Criar" />
+            {/* 6 - loading no POST */}
+            {loading && <input type="submit" disabled value="Aguarde..." /> }
+            {!loading && <input type="submit" value="Criar" /> }
           </form>
         </div>
       </div>
