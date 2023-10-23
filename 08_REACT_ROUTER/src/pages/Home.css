@@ -1,0 +1,25 @@
+.home h1{
+  font-size: 3rem;
+}
+
+.home h2{
+  font-size: 2.5rem;
+}
+
+.products {
+  list-style: none;
+}
+
+.products li {
+  color: #575757;
+  font-size: 1.8rem;
+  background-color: #eeeeee;
+  margin-top: 15px;
+  padding: 10px 40px;
+}
+
+.products li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #0049b8;
+}

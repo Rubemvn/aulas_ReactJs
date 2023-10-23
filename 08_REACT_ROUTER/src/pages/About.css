@@ -1,0 +1,8 @@
+.about {
+  margin: 15px;
+  background-color: #fff;
+  padding: 30px;
+  color: #003688;
+  display: flex;
+  justify-content: center;
+}

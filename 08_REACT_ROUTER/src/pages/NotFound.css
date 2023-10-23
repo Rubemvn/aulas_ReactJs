@@ -1,0 +1,18 @@
+.notFound {
+  height: 100%;
+}
+
+.notFound h1 {
+  color: #ff4444;
+  font-size: 40rem;
+}
+
+.notFound p {
+  font-size: 2.5rem;
+}
+
+.notFound a {
+  color: #004bbb;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
