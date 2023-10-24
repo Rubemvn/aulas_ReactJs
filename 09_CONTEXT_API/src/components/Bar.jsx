@@ -1,7 +1,6 @@
 import './Bar.css'
 import SearchForm from './SearchForm'
 
-
 const Bar = () => {
   return (
     <div className="bar">

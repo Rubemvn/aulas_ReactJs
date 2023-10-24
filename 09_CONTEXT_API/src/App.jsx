@@ -14,6 +14,7 @@ import Product from './pages/Product'
 import Info from './pages/Info'
 import NotFound from './pages/NotFound'
 import Search from './pages/Search'
+import Teste from './pages/Teste'
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Home/>} />
               <Route path='/about' element={<About />} />
+              <Route path='/teste' element={<Teste />} />
               {/* 6 - Nested routes */}
               <Route path='/products/:id/info' element={<Info />} />  
               {/* 4 - Rota dinamica */}

@@ -14,6 +14,11 @@
       "id": 4,
       "name": "Tênis Adidas",
       "price": 359.9
+    },
+    {
+      "name": "mouse ",
+      "price": "78.9",
+      "id": 5
     }
   ]
 }

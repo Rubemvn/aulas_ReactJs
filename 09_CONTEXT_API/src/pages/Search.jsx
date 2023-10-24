@@ -18,7 +18,7 @@ const Search = () => {
       <h1>Resultados disponíveis</h1>
 
       <ul className='products'>
-        {itemsArray.map((item) => (
+        {items && items.map((item) => (
           <li key={item.id}>
             <h3>ID: #{item.id} | {item.name}</h3>
             <h4>R$ {item.price}</h4>

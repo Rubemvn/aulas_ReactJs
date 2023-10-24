@@ -19,6 +19,11 @@ const NavBar = () => {
             About
           </div>
         </NavLink>
+        <NavLink to="/teste" className='link'>
+          <div className='linkButton'> 
+            Teste
+          </div>
+        </NavLink>
       </div>
     </nav>
   )
