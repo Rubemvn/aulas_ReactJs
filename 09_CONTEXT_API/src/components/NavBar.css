@@ -1,0 +1,50 @@
+.nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  z-index: 2000;
+  background-color: #041734;
+  width: 200px;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 2rem;
+}
+.links {
+  flex-direction: column;
+  width: 100%;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link .linkButton {
+  background-color: #061B3C;
+  color: #b1b1b1;
+}
+
+.linkButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  font-size: 1.8rem;
+  padding: 20px;
+  cursor: pointer;
+  transition: all .3s linear;
+  text-align: left;
+}
+
+.active .linkButton{
+  background-color: #071F44;
+}

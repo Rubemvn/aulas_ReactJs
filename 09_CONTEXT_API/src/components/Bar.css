@@ -1,0 +1,15 @@
+.bar {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+
+.bar h1 {
+  color: #041734;
+  font-size: 3.5rem;
+}
